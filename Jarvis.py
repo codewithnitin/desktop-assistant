@@ -39,7 +39,7 @@ def sendemail(to,content):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    with open("Pass_secure.txt", "r") as f:
+    with open("Pass_secure1.txt", "r") as f:
         password = f.read()
     server.login("s1911nitin@gmail.com", password)
     server.sendmail("s1911nitin@gmail.com", to, content)
